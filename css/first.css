@@ -1,0 +1,173 @@
+* {
+        box-sizing: border-box;
+}
+
+body {
+        margin: 1%;
+}
+h1 {
+        font-size: 70px;
+        text-transform: capitalize;
+        text-shadow: 2px 2px blue;
+}
+
+h2 {
+        font-size:40px;
+        font-style: "serif","Arial";
+}
+h3 {
+        font-size: 30px;
+        font-style: "serif","Arial";
+}
+h4 {
+        font-size: 20px;
+        font-style: "serif","Arial";
+}
+.blurred-header{
+        font-family: "serif","monospace","Arial","sans-serif","Times new roman";
+        font-weight:bold;
+        color:rgb(255,255,255);
+        text-align: center;
+        position: relative;
+        padding: 8%;
+        padding-top: 5%;
+        overflow: hidden;
+
+}
+
+.blurred-header > *:not(.blurred-bg) {
+        z-index: 2;
+        position: relative;
+}
+
+.blurred-bg {
+        background-image: url("/home/kajal/Desktop/Coursera/HTML/Project/images/image4.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        top:0;
+        left:0;
+        z-index: 1;
+        width: 100%;
+        height: 400px;
+        position: absolute;
+        filter: blur(5px);
+
+}
+nav {
+        position: absolute;
+        float: right;
+        width: 100%;
+        padding: 0.5%;
+}
+nav > *:not(.blurred-bg) {
+        z-index: 2;
+        position: relative;
+}
+
+a {
+        text-decoration: none;
+        padding: 0.5%;
+        font-size: 150%;
+        background: rgb(255,255,255);
+        border-color: rgb(0,0,0);
+        border-style: solid;
+}
+a:hover {
+        background: linear-gradient(to bottom, #cc66ff 0%, #6600cc 100%);
+        margin: auto;
+        border-radius: 5px;
+        color: rgb(0,0,0)
+}
+
+/* css for para aboutus */
+.about-us {
+        margin: 5%;
+        padding: 10%;
+        text-align: center;
+        background: linear-gradient(to top left, #00ffff 0%, #000099 100%);
+        transition: transform .5s; /* Animation */
+        /*border-color: red;
+        border-style: solid;*/
+}
+
+.about-us:hover {
+         font-size: 120%;
+        /*background: linear-gradient(to bottom, #cc66ff 0%, #6600cc 100%);*/
+         background: linear-gradient(to top left, #33cc33 0%, #00ffff 100%);
+         transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+.our-services {
+        text-align: center;
+}
+
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+  width: 300px;
+  height: 200px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  display: inline-block;
+  margin: 1%;
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+
+        color: black;
+        font-style: italic;
+        font-weight: 800;
+        font-size: 30px;
+        text-align: center;
+        padding:60px;
+        border-radius: 30px;
+}
+
+/* Style the back side */
+.flip-card-back {
+        background-color: dodgerblue;
+        color: white;
+        transform: rotateY(180deg);
+        font-style: italic;
+        font-weight: 800;
+        font-size: 20px;
+        text-align: center;
+        padding: 50px;
+        border-radius: 30px;
+}
+
+p {
+        word-wrap: break-word;
+}
+
+
+.mycontact {
+        color:blue;
+        text-align: center;
+
+}
