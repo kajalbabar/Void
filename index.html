@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+        <head>
+                <meta charset="utf-8">
+                <title>Void Star Enterprises</title>
+                <link rel="stylesheet" href ="https://github.com/kajalbabar/Void/tree/master/css/first.css">
+                <link rel="stylesheet" href="https://github.com/kajalbabar/Void/tree/master/css/form.css">
+                <script src="https://github.com/kajalbabar/Void/tree/master/js/form.js" charset="utf-8"></script>
+                <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+        </head>
+
+        <body>
+                <nav>
+                        <a href="#about">About us</a>
+                        <a href="#our-services">Our Servies</a>
+                        <a href="#contact" class = "active">Contact us</a>
+                </nav>
+
+                <header class = "blurred-header">
+                        <div class = "blurred-bg"></div>
+                        <div class="name"> <h1> Void Star Enterprises </h1></div>
+                        <p> <h2> Good quality is our first priority</h2> </p>
+                 </header>
+
+                 <!-- <about para> -->
+                 <div class="about-us" id ="about">
+                         <p><h4> We,Void Star Enterprises provide variaous facilities to maintain your bunglo in Lavasa city. Our moto is 'Provide Good quality work'. We have man power to handle all the work
+                         </h4></p>
+                 </div>
+
+                 <!-- Our servies -->
+                 <div class="our-services" id="our-services">
+                        <p><h2>Services That we provide </h2></p>
+
+                        <!-- 1.gradening -->
+                        <div class="flip-card">
+                                <div class="flip-card-inner">
+                                        <div class="flip-card-front"  style="background: linear-gradient(to right, #00ff00 0%, #00ccff 100%);">
+                                                Gardening Work
+                                        </div>
+                                        <div class="flip-card-back" style="background: linear-gradient(to right, #00ccff 0%, #00ff00  100%);">
+                                                We nurish your garden like our property
+                                        </div>
+                                </div>
+                        </div>
+
+                        <!-- 2.gradening -->
+                         <div class="flip-card" >
+                                 <div class="flip-card-inner" >
+                                         <div class="flip-card-front" style="background: linear-gradient(to right, #00ffff 0%, #0066ff 100%);">
+                                                 Gardening Work
+                                         </div>
+                                         <div class="flip-card-back" style="background: linear-gradient(to right,  #0066ff  0%, #00ffff 100%);">
+                                                 We nurish your garden like our property
+                                         </div>
+                                 </div>
+                         </div>
+
+                         <!-- 3.gradening -->
+                          <div class="flip-card" >
+                                  <div class="flip-card-inner">
+                                          <div class="flip-card-front" style="background: linear-gradient(to right, #0099ff 0%, #000066 100%);">
+                                                  Gardening Work
+                                          </div>
+                                          <div class="flip-card-back" style="background: linear-gradient(to right,#000066 0%,#0099ff 100%);">
+                                                  We nurish your garden like our property
+                                          </div>
+                                  </div>
+                          </div>
+                          <!-- 4.gradening -->
+                           <div class="flip-card">
+                                   <div class="flip-card-inner">
+                                           <div class="flip-card-front" style="background: linear-gradient(to right, #000066  0%, #cc00cc 100%);">
+                                                   Gardening Work
+                                           </div>
+                                           <div class="flip-card-back" style="background: linear-gradient(to right, #cc00cc 0%,#000066 100%);">
+                                                   We nurish your garden like our property
+                                           </div>
+                                   </div>
+                           </div>
+                           <!-- 5.gradening -->
+                            <div class="flip-card">
+                                    <div class="flip-card-inner">
+                                            <div class="flip-card-front"  style= "background: linear-gradient(to right, #cc00cc 0%, #660033 100%);" >
+                                                    Gardening Work
+                                            </div>
+                                            <div class="flip-card-back" style="background: linear-gradient(to right,#660033  0%, #cc00cc 100%);">
+                                                    We nurish your garden like our property
+                                            </div>
+                                    </div>
+                            </div>
+                   </div>
+
+                  <!-- Contact us -->
+                <div>
+                        <p>
+                                <h2>Let us Know each other</h2>
+                        </p>
+                        <div class = "mycontact">
+                                <br>
+                                <i class='fas fa-portrait' style='font-size:24px;color:red'>
+                                        <span style="color:blue"> Mangesh Kachare </span>
+                                        </i>
+                                <br>
+                                <br>
+                                <i class='fas fa-phone' style='font-size:24px;color:red' >
+                                        <span style="color:blue">  9834199579</span> </i>
+                                <br>
+                                <br>
+                                <i class='fas fa-envelope-open' style='font-size:24px;color:red' >
+                                        <span style="color:blue">  kajal@gmail.com</span> </i>
+                                <br>
+                                <br>
+
+                                <i class='fas fa-address-book' style='font-size:24px;color:red' >
+                                        <span style="color:blue">  Lavasa, Pune</span> </i>
+
+                        </div>
+
+                        <div class = "container" id="contact-us" >
+                                <p>
+                                        <h3 style="color:green">Enter your details: </h3>
+                                </p>
+
+                                <form  onsubmit=" return checkname()">
+                                        <label for="fname">First Name</label>
+                                        <input type="text" id="fname" name="firstname" placeholder="your name..." required>
+
+                                        <label for="lname">Last Name</label>
+                                        <input type="text" id="lname" name="lastname" placeholder="your surname..." required>
+
+                                        <label for="cnumber">Contact number</label>
+                                        <input type="text" id="cnumber" name="number" placeholder="Your contact number..." required>
+
+                                        <label for="mail">Mail ID</label>
+                                        <input type="text" id="mail" name="mailid" placeholder="Your mail id..." required>
+
+                                        <label for="subject">Subject</label>
+                                        <textarea id="subject" id="subject" name="subjectarea"
+                                        placeholder="Write something.." style="height:200px">
+                                </textarea>
+
+                                        <input type='submit' value="submit">
+                                </form>
+                        </div>
+                </div>
+
+
+        </body>
+</html>
